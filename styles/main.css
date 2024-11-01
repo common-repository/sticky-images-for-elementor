@@ -1,0 +1,34 @@
+.miga_sticky_images__container .miga_sticky_images__image {
+  text-align: center;
+  position: relative;
+}
+
+.miga_sticky_images__container .miga_sticky_images__image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.miga_sticky_images__container.fade .miga_sticky_images__image img {
+  opacity: 0;
+  transition: 0.25s opacity;
+}
+
+.miga_sticky_images__container.fade .miga_sticky_images__image:first-child img {
+  opacity: 1;
+}
+
+.miga_sticky_images__container.fade .miga_sticky_images__image .miga_fixed {
+  opacity: 1;
+}
+
+.miga_sticky_images__container .miga_sticky_images__image .miga_fixed {
+  position: fixed;
+}
+
+.miga_sticky_images__container .miga_sticky_images__image.miga_hidden {
+  visibility: hidden;
+}
+
+.miga_sticky_images__container.fade .miga_sticky_images__image.miga_hidden img {
+  opacity: 0;
+}
